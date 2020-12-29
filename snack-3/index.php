@@ -43,16 +43,16 @@ $posts = [
 
 <ul>
       <?php
-      foreach ($posts as $k => $post) {
+      foreach ($posts as $key => $post) {
          foreach ($post as $details){
             echo
             "<li>" .
-             $k .
+             $key .
              " - " .
              $details['title'] .
-             " : ".
+             " scritto da : ".
              $details['author'] .
-             " - ".
+             " - messaggio : ".
              $details['text'] .
              "</li>";
          }
